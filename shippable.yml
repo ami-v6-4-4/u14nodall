@@ -13,5 +13,10 @@ node_js:
   - 9.11.1	
   
 build:
+  pre_ci_boot:
+    image_name: drydock/u14nodall
+    image_tag: v6.4.4
+    pull: true
+    
   ci:
     - node --version
